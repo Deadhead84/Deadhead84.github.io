@@ -18,22 +18,50 @@ html, body {
 
 .header {
 	width: 100%;
-	height: 30%;
+	height: 25%;
 	
 }
 
-section.module.parallax {
+section.module.parallax {  
   height: 400px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
-
+ section.module.content {
+ 	height: 35%;
+ 	margin: 0 auto;	
+ }
 .paralax-one {
 	width: 100%;
 	height: 40%;
 	background: gray;
+}
+
+.info {
+	border: 4px solid black;
+	/*border-radius: 50%;*/
+	height: 200px;
+	width: 300px;
+	float: left;
+	text-align: center;
+	margin-top: 21px;
+	margin-left: 94px;
+}
+
+.info-1 {
+	/*margin-left: 100px*/
+}
+
+.info {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 20;
+	text-transform: uppercase;
+	font-weight: bold;
 }
 
 .header p {
@@ -41,7 +69,7 @@ section.module.parallax {
 	font-family: 'Quicksand', sans-serif;
 	text-transform: lowercase;
 	text-align: center;
-	margin-top: 100px;
+	margin-top: 90px;
 }
 
 section.module.parallax-1 {
@@ -52,7 +80,7 @@ section.module.parallax-1 {
 
 .parallax-2 {
 
-	background: url("https://unsplash.imgix.net/39/483LKAktTE2ZB1UIkNYY_3.jpg?fit=crop&fm=jpg&h=700&q=75&w=1050");
+	background: url("https://download.unsplash.com/photo-1434641375963-9790209dbfe4");
 }
 
 
