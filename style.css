@@ -62,9 +62,13 @@ section.module.parallax {
 	font-size: 20;
 	text-transform: uppercase;
 	font-weight: bold;
+	background: rgb(200, 214, 211)
 }
 
 .header p {
+	border-top: 4px solid black;
+	border-bottom: 4px solid black;
+	position: relative;
 	font-size: 60;
 	font-family: 'Quicksand', sans-serif;
 	text-transform: lowercase;
@@ -73,9 +77,8 @@ section.module.parallax {
 }
 
 section.module.parallax-1 {
-
-	background-image: url("https://download.unsplash.com/photo-1434715961933-4cbf3d79230f"); 
-
+	background-image: url("images/roadandvan.jpg"); 
+	filter: grayscale(100%);
 }
 
 .parallax-2 {
@@ -83,4 +86,4 @@ section.module.parallax-1 {
 	background: url("https://download.unsplash.com/photo-1434641375963-9790209dbfe4");
 }
 
-
+@media
