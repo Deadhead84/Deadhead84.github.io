@@ -62,7 +62,7 @@ section.module.parallax {
 	font-size: 20;
 	text-transform: uppercase;
 	font-weight: bold;
-	background: rgb(200, 214, 211)
+	
 }
 
 .header p {
@@ -83,7 +83,7 @@ section.module.parallax-1 {
 
 .parallax-2 {
 
-	background: url("https://download.unsplash.com/photo-1434641375963-9790209dbfe4");
+	background: url("https://download.unsplash.com/photo-1434285692992-0a83b5617f7e");
 }
 
 @media
