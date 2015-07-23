@@ -1,115 +1,20 @@
-
-/*----------------------------- user code --------------------------------*/
-html, body {
-/*  background: url("https://unsplash.imgix.net/photo-1423439793616-f2aa4356b37e?fit=crop&fm=jpg&h=600&q=75&w=1050"); 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;*/
-  width: 100%;
-  margin: 0;
-  padding: 0;
+.inner {
+    font-family: 'Quicksand', sans-serif;
 }
 
-
-.container {
-	width: 100%;
-	margin: 0;
-	padding: 0;
+.btn {
+    width: 100px;
+    background: none;
+    border: 2px solid white;
+    border-radius: 0;
+    color: white;
 }
 
-.header {
-	width: 100%;
-	height: 25%;
-	
+.btn:hover {
+    width: 100px;
+    background: white;
+    border: 2px solid white;
+    border-radius: 0;
+    color: black;
 }
 
-section.module.parallax {  
-  height: 400px;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
- section.module.content {
- 	height: 35%;
- 	margin: 0 auto;	
- }
-.paralax-one {
-	width: 100%;
-	height: 40%;
-	background: gray;
-}
-
-.info {
-	border: 4px solid black;
-	/*border-radius: 50%;*/
-	height: 200px;
-	width: 300px;
-	float: left;
-	text-align: center;
-	margin-top: 21px;
-	margin-left: 94px;
-}
-
-.info-1 {
-	/*margin-left: 100px*/
-}
-
-.info {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-family: 'Quicksand', sans-serif;
-	font-size: 20;
-	text-transform: uppercase;
-	font-weight: bold;
-	
-}
-
-.header p {
-	border-top: 4px solid black;
-	border-bottom: 4px solid black;
-	position: relative;
-	font-size: 60;
-	font-family: 'Quicksand', sans-serif;
-	text-transform: lowercase;
-	text-align: center;
-	margin-top: 90px;
-}
-
-section.module.parallax-1 {
-	background-image: url("images/roadandvan.jpg"); 
-}
-
-.parallax-2 {
-
-	background: url("https://download.unsplash.com/photo-1434285692992-0a83b5617f7e");
-}
-
-@media(max-width:960px) {
-	.module.content {
-		display: relative;
-	}
-	.info {
-		display: relative;
-		height: 120px;
-		width: 170px;
-		margin: 0 auto;
-		margin-top: 10px;
-		float: none;
-		clear: both;
-	}
-
-	.info h1 {
-		font-size: 20px;
-	}
-
-	.header p {
-		font-size: 30;
-	}
-
-	section.module.parallax-2 {
-
-	}
-}
