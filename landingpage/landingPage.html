@@ -8,11 +8,31 @@
         <ul class="primary">
             <li><a href="#">About</a></li>
             <li><a href="#">Service</a></li>
-            <li><a href="#">Contact</a></li>
+            <li id="contact"><a href="#">Contact</a></li>
             <li><a href="#">Blog</a></li>
         </ul>
     </nav>
    </header>
+
+   <div class"container">
+      <div class="middle">
+          <div class="contact">
+            <div class="confirm"><h3>Thank you for your interest, someone will contact you shortly.<h3></div>
+            <form id="form">
+                <input type="text" placeholder="First Name"></input>
+                <input type="text" placeholder="Last Name"></input>
+                <input type="email" placeholder="Email"></input>
+                <textarea type="text" placeholder="Questions"></textarea>
+                <button id="submit" value="Submit">Submit</button>
+            </form>
+          </div>
+
+
+      </div>
+  </div>
+
+
+   </div>
    <div class="container">
     <div id="middle">
     </div>
@@ -26,19 +46,68 @@
         </div>
 
         <div class="column column-2">
-            <ul>
-                <li>Testimonials</li>
-                <li>Something Else</li>
-                <li>And some more</li>
-            </ul>
+            <article>
+                <h1>News</h1>
+                <p>laksjdfl;kasjdfl;aksjfd;lk;lkaj</p>
         </div>
         <div class="column column-2">
             <ul>
                 <li>Testimonials</li>
                 <li>Something Else</li>
                 <li>And some more</li>
+                <li>{{test}}</li>
             </ul>
         </div>        
 
    </footer>
    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript">
+
+            $(".primary").addClass("fafa").before("<div id='dropdown'>&#9776;</div>");
+            $("#dropdown").click(function(){
+                $(".primary").slideToggle();
+            });
+
+            $("#contact").click(function(){ //toggle my contact form
+                $(".contact").slideToggle();
+            });
+
+            $('#submit').click(function(){  //this function restores the form after submission. 
+                $('#form').fadeOut();
+                $('.confirm').show();
+                setTimeout(function(){
+                    $('#form').show();
+                    $('.confirm').hide();
+                    $('.contact').hide  ();
+                }, 3000);   
+            });
+
+            $(window).resize(function(){    // this function ensures that the navbar doesn't get hidden upon resize
+                if (this.innerWidth > 768) {
+                    $('.primary').show();
+                }
+
+                else {
+                    $('.primary').hide();
+                }
+            });
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
