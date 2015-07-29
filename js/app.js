@@ -1,4 +1,4 @@
-var app = angular.module("beerApp", ['ngRoute']);
+var app = angular.module("beerApp", ['firebase', 'ngRoute']);
 
 app.config(function($routeProvider){
 
@@ -14,10 +14,15 @@ app.config(function($routeProvider){
         controller: 'landingController'
     })
     
-    .when('/contactpage', {
+    .when('/contact', {
         templateUrl: 'contactpage/contactindex.html',
         controller: 'contactcontroller'
         
+    })
+
+    .when('/service', {
+        templateUrl: 'services/serviceindex.html',
+        controller: 'servicesController'
     })
 
 });

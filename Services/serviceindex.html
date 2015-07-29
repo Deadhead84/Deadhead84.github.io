@@ -1,9 +1,12 @@
+<!DOCTYPE html>
+<html>
 <head>
-<!--     <link href="css/bootstrap.css" rel="stylesheet"> -->
-    <link href="landingpage/css/landingstyle.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Quicksand:400' rel='stylesheet' type='text/css'>
-
+<!-- 	<link href="css/bootstrap.css" rel="stylesheet"> -->
+	    <link href='http://fonts.googleapis.com/css?family=Quicksand:400' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="landingpage/css/landingstyle.css">
+		<link rel="stylesheet" type="text/css" href="servicepage/css/servicestyle.css">
 </head>
+<body>
    <header id="header">
     <nav>
         <ul class="primary">
@@ -15,7 +18,7 @@
     </nav>
    </header>
 
-   <div class"container">
+      <div class"container" ng-controller="landingController">
       <div class="middle">
           <div class="contact">
             <div class="confirm"><h3>Thank you for your interest {{firstName}}, someone will contact you shortly.<h3></div>
@@ -30,15 +33,36 @@
                 <button id="submit" value="Submit" ng-click="submitForm()">Submit</button>
             </form>
           </div>
+
+
       </div>
-   </div>
+  </div>
+	<h1>Service We Offer</h1>
+	<div class="maintenance">
+		<ul class="lightMaintenance">
+			<h3>Light Maintenance</h3>
+			<li>Transmission Services</li>
+			<li>Engine Oil and Filter Service</li>
+			<li>Cooling System Service</li>
+			<li>Brake System Service</li>
+			<li>Engine Air Filter</li>
+			<li>Cabin Air Filter</li>
+			<li>Fuel Filter</li>
+			<li>Brake Pad Replacement and Rotor Resurface</li>
+			<li>Tire Balance and Replacement</li>
+			<li>Power Steering Service</li>
+			<li>Fuel Injection Service</li>
+		</ul>
 
+		<ul class="heavyMaintenance">
+			<h3>Heavy Maintenance</h3>
+			<li>Timing Belt Service</li>
+			<li>Water Pump Replacement</li>
+			<li>Valve Adjustment</li>
+		</ul>
+	</div>
 
-   </div>
-   <div class="container">
-    <div id="middle">
-    </div>
-   <footer id="footer">
+	   <footer id="footer">
         <div class="column column-1">
             <ul>
                 <li>Testimonials</li>
@@ -63,9 +87,7 @@
             </ul>
         </div>        
 
-   </footer>
-   
-
+       </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script type="text/javascript">
 
@@ -79,7 +101,7 @@
             });
 
             $('#submit').click(function(){  //this function the form after submission. 
-                if (document.getElementById("#firstName") !== "") {
+                if (document.getElementById("#firstName") === "") {
                      alert("Please fill out form");
                 } else {
                     $('#form').fadeOut();
@@ -107,3 +129,5 @@
 
 
     </script>
+</body>
+</html>
