@@ -21,7 +21,7 @@ app.config(function($routeProvider){
     })
 
     .when('/service', {
-        templateUrl: 'services/serviceindex.html',
+        templateUrl: 'Services/serviceindex.html',
         controller: 'servicesController'
     })
 
