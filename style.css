@@ -1,20 +1,94 @@
-.inner {
-    font-family: 'Quicksand', sans-serif;
+html, body {
+  	background: url("https://download.unsplash.com/33/hBd6EPoQT2C8VQYv65ys_White%20Sands.jpg") no-repeat center center fixed;
+  	background-size:   cover;                      
+/*  	background-repeat: no-repeat;
+  	background-position: center center; */
+	font-family: 'Quicksand', sans-serif !important;
+	color: white !important;
 }
 
-.btn {
-    width: 100px;
-    background: none;
-    border: 2px solid white;
-    border-radius: 0;
-    color: white;
+@media(min-width: 768px){
+.nav {
+	float: right;
 }
 
-.btn:hover {
-    width: 100px;
-    background: white;
-    border: 2px solid white;
-    border-radius: 0;
-    color: black;
+ .navbar.transparent.navbar-inverse {
+    border-width: 0px;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+    background-color: rgba(0,0,0,0.0);
+    background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
+    background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+    background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
 }
+
+.navbar-collapse.collapse {
+        text-align: center; /* Set this */
+        display: block !important;
+        height: auto !important;
+        padding-bottom: 0;
+        overflow: visible !important;
+}
+
+.navbar-nav {
+    display: inline-block;
+    float: none;
+    margin: 0;
+    padding-top: 10px !important;
+}
+
+.navbar-nav a {
+	padding: 0px !important;
+	color: white !important;
+}
+
+.active a {
+	background-color:  !important;
+}
+
+.navbar-nav li {
+    width: 150px !important;
+    border-top: 1px solid gray !important;
+    list-style: none !important;  /* getting rid of bullet points */
+    display: inline-block !important;  /* enableing it so that I can center and fix my navbar */
+    margin: 0 5px !important;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+	background: rgba(10, 9, 9, 0.50);
+}
+};
+
+.row {
+	background: rgba(10, 9, 9, 0.50);
+}
+.headings {
+	background: rgba(10, 9, 9, 0.50);
+	padding-top: 25px;
+}
+.featurette {
+	background: rgba(10, 9, 9, 0.50);
+	color: white;
+}
+
+.angular-view {
+	width: 102% !important;
+	height: 50% !important;
+	display: block !important;
+	margin-left: -14px;
+	margin-top: 100px;
+}
+
+.form-control {
+	padding-right: 5px !important;
+}
+
+
+
+
+
+
+
+
+
 

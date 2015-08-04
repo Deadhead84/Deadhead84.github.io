@@ -1,28 +1,27 @@
-var app = angular.module("beerApp", ['firebase', 'ngRoute']);
+var app = angular.module('autoApp', ['firebase', 'ngRoute']);
+
 
 app.config(function($routeProvider){
 
     $routeProvider
     
     .when('/', {
-        templateUrl: 'coverpage/coverindex.html',
-        controller: 'beerController'
+        templateUrl: '/Homepage/homepage.html',
+        controller: 'homeController'
     })
-    
-    .when('/landingpage', {
-        templateUrl: 'landingpage/landingPage.html',
-        controller: 'landingController'
-    })
-    
+
     .when('/contact', {
-        templateUrl: 'contactpage/contactindex.html',
-        controller: 'contactcontroller'
-        
+    	templateUrl: '/contactPage/contactPage.html',
+    	controller: 'contactController'
     })
 
-    .when('/service', {
-        templateUrl: 'Services/serviceindex.html',
-        controller: 'servicesController'
+    .when('/admin', {
+    	templateUrl: '/adminPage/adminPage.html',
+    	controller: 'contactController'
     })
 
+    .when('/services', {
+    	templateUrl: '/servicesPage/servicesPage.html',
+    	controller: 'contactController'
+    })
 });
