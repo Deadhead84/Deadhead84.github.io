@@ -24,4 +24,9 @@ app.config(function($routeProvider){
     	templateUrl: '/servicesPage/servicesPage.html',
     	controller: 'contactController'
     })
+
+    .when('/login', {
+    	templateUrl: '/loginPage/loginPage.html',
+    	controller: 'loginController'
+    })
 });
