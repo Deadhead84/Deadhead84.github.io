@@ -6,9 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
+    <meta name="automotive" content="repair, cars, service, auto service, timing belt, water pump, check engine light">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
 
     <title>Scoville Automotive Services</title>
 
@@ -26,9 +25,10 @@
   <body id="top">
 
 
-    <div class="navbar-wrapper">
+    <div class="navbar-wrapper">  <!-- containers needed for proper bootstrap layout -->
       <div class="container">
 
+        <!--   these kinds of classes are bootstrap specific and control styling -->
         <nav class="navbar transparent navbar-inverse navbar-fixed-top">
           <div class="container">
             <div class="navbar-header">
@@ -42,23 +42,13 @@
               <a class="navbar-brand" href="#/" style="color: white; :hover: color: black;">S a S</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
+              
+                 <!-- links for navbar -->
               <ul class="nav navbar-nav">
                 <li class="active"><a href="#/">Home</a></li>
                 <li><a href="#services">Sevices</a></li>
                 <li><a href="#contact" data-toggle="modal" data-target="#myModal">Contact</a></li>
-                <li><a href="#login">Log In</a></li>
-<!--                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li class="dropdown-header">Nav header</li>
-                    <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li>
-                  </ul>
-                </li> -->
+                <li><a href="#login">Log In</a></li> <!-- the (#) is part of angular routing -->
               </ul>
             </div>
           </div>
@@ -87,19 +77,19 @@
           <img class="img-circle" src="http://1.bp.blogspot.com/-Q98FWatfq-A/T6QkGuZbh5I/AAAAAAAACDY/Qu58eUoh3Sw/s1600/timing_belt.gif" alt="Generic placeholder image" width="140" height="140">
           <h2>Timing Belts</h2>
           <p>Many vehicles have timing belts on them. If the timing belt isn't replaced at its recommended interval it could break and potentially cause catastrophic damage to your engine.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-default" href="#services" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="http://www.elementownersclub.com/uploads/files/feeler.jpg" alt="Generic placeholder image" width="140" height="140">
           <h2>Valve Adjustments</h2>
           <p>If you dont keep up on your valve adjustments your vehicle can begin to generate misfires, trigger a check engine light, and cause damage to other components on your vehicle.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-default" href="#services" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="http://pictures.dealer.com/s/sivigliamotorgrouporlando/0433/a17c0207a2613446b3750daa8a5c4b01x.jpg" alt="Generic placeholder image" width="140" height="140">
           <h2>Check Engine Lights</h2>
           <p>If your check engine light turns on it means that there is a fault that is effecting the emissions of your vehicle. Check engine lights can be very simple or very complex. We have highly qualified technicians ready to give you the correct diagnosis the first time.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-default" href="#services" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
@@ -158,7 +148,6 @@
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 

@@ -1,5 +1,8 @@
+
+/* I had to use a lot of !important to override many bootstrap presassembled styles */
+
 html, body {
-  	background: url("https://download.unsplash.com/33/hBd6EPoQT2C8VQYv65ys_White%20Sands.jpg") no-repeat center center fixed;
+  	background: url("https://download.unsplash.com/33/hBd6EPoQT2C8VQYv65ys_White%20Sands.jpg") no-repeat center center fixed; /* this gave background image effect that I have */
   	background-size:   cover;                      
 /*  	background-repeat: no-repeat;
   	background-position: center center; */
@@ -7,12 +10,13 @@ html, body {
 	color: white !important;
 }
 
-@media(min-width: 768px){
+/* the media query made it so I could customize my navbar as transparent and style it differently in the desktop version and still keep bootstraps responsive mobile version*/
+@media(min-width: 768px){ 
 .nav {
 	float: right;
 }
 
- .navbar.transparent.navbar-inverse {
+ .navbar.transparent.navbar-inverse {  
     border-width: 0px;
     -webkit-box-shadow: 0px 0px;
     box-shadow: 0px 0px;
@@ -31,7 +35,7 @@ html, body {
 }
 
 .navbar-nav {
-    display: inline-block;
+    display: inline-block; /*so I can set my float*/
     float: none;
     margin: 0;
     padding-top: 10px !important;
@@ -54,6 +58,8 @@ html, body {
     margin: 0 5px !important;
 }
 
+
+/* all the rgba backgrounds are to give the transparent grayed out effect in the background of my featurettes */
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
 	background: rgba(10, 9, 9, 0.50);
 }
@@ -71,6 +77,7 @@ html, body {
 	color: white;
 }
 
+/* this is the most important style aspect of the app, it injects angulars different views into the homepage*/
 .angular-view {
 	width: 102% !important;
 	height: 50% !important;
