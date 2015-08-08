@@ -46,7 +46,7 @@ $scope.fbAuth = fbAuth;
             password: password
           }).then(function(authData) {
             console.log('authData', authData);
-            $location.path('/#dashboard')
+            $location.path('/admin')
           }, function(error) {
             alert("Incorrect Username or Password")
             console.log('error', error);
